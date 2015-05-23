@@ -6,7 +6,7 @@ var batteryLevel = require('./');
 meow({
 	help: [
 		'Usage',
-		'  $ osx-battery'
+		'  $ battery-level'
 	].join('\n')
 });
 
