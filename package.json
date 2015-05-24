@@ -31,8 +31,10 @@
     "os x"
   ],
   "dependencies": {
+    "linux-battery": "^1.0.0",
     "meow": "^3.1.0",
-    "osx-battery": "^1.0.1"
+    "osx-battery": "^1.0.1",
+    "to-decimal": "^1.0.0"
   },
   "devDependencies": {
     "ava": "0.0.4"
