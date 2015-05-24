@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 var meow = require('meow');
+var toPercent = require('to-percent');
 var batteryLevel = require('./');
 
 meow({
@@ -16,5 +17,5 @@ batteryLevel(function (err, res) {
 		process.exit(1);
 	}
 
-	console.log(res);
+	console.log(toPercent(res) + '%');
 });

@@ -34,7 +34,8 @@
     "linux-battery": "^1.0.0",
     "meow": "^3.1.0",
     "osx-battery": "^1.0.1",
-    "to-decimal": "^1.0.0"
+    "to-decimal": "^1.0.0",
+    "to-percent": "^1.0.2"
   },
   "devDependencies": {
     "ava": "^0.0.4"

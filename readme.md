@@ -33,7 +33,7 @@ $ battery-level --help
 
   Usage
     $ battery-level
-    0.55
+    55%
 ```
 
 
