@@ -17,7 +17,7 @@ var batteryLevel = require('battery-level');
 
 batteryLevel(function (err, res) {
 	console.log(res);
-	//=> 0.5525
+	//=> 0.55
 });
 ```
 
@@ -33,7 +33,7 @@ $ battery-level --help
 
   Usage
     $ battery-level
-    0.5525
+    0.55
 ```
 
 

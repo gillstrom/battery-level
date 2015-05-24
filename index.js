@@ -10,7 +10,7 @@ function osx(cb) {
 			return;
 		}
 
-		cb(null, parseFloat((res.mAhRemaining / res.mAhCapacity).toFixed(4)));
+		cb(null, parseFloat((res.mAhRemaining / res.mAhCapacity).toFixed(2)));
 	});
 }
 
@@ -23,7 +23,7 @@ function linux(cb) {
 
 		res = res.percentage.slice(0, res.percentage.length);
 		cb(null, toDecimal(parseFloat(res)));
-	})
+	});
 }
 
 module.exports = function (cb) {

@@ -37,6 +37,6 @@
     "to-decimal": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "^0.0.4"
   }
 }

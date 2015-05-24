@@ -3,7 +3,7 @@ var test = require('ava');
 var batteryLevel = require('./');
 
 if (!process.env.CI) {
-	test('battery', function (t) {
+	test(function (t) {
 		t.plan(3);
 
 		batteryLevel(function (err, res) {
