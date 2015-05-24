@@ -12,6 +12,6 @@ module.exports = function (cb) {
 			return;
 		}
 
-	    cb(null, res.mAhRemaining / res.mAhCapacity);
+	    cb(null, parseFloat((res.mAhRemaining / res.mAhCapacity).toFixed(4)));
 	});
 };
