@@ -10,7 +10,7 @@ function osx(cb) {
 			return;
 		}
 
-		cb(null, parseFloat((res.mAhRemaining / res.mAhCapacity).toFixed(2)));
+		cb(null, parseFloat((res.currentCapacity / res.maxCapacity).toFixed(2)));
 	});
 }
 
