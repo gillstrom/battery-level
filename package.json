@@ -26,16 +26,19 @@
     "cli",
     "cli-app",
     "level",
+    "linux",
     "mac",
     "osx",
-    "os x"
+    "os x",
+    "windows"
   ],
   "dependencies": {
     "linux-battery": "^1.0.0",
     "meow": "^3.1.0",
     "osx-battery": "^1.0.1",
     "to-decimal": "^1.0.0",
-    "to-percent": "^1.0.2"
+    "to-percent": "^1.0.2",
+    "win-battery-level": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.0.4"

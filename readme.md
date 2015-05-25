@@ -1,6 +1,6 @@
 # battery-level [![Build Status](https://travis-ci.org/gillstrom/battery-level.svg?branch=master)](https://travis-ci.org/gillstrom/battery-level)
 
-> Get current battery level (OS X and Linux only)
+> Get current battery level
 
 
 ## Install

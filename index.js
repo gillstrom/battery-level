@@ -26,16 +26,10 @@ function linux(cb) {
 	});
 }
 
-module.exports = function (cb) {
-	if (process.platform === 'darwin') {
-		osx(cb);
-		return;
-	}
-
-	if (process.platform === 'linux') {
-		linux(cb);
-		return;
-	}
-
-	throw new Error('Only OS X and Linux systems are supported');
-};
+if (process.platform === 'darwin') {
+	module.exports = osx;
+} else if (process.platform === 'linux') {
+	module.exports = linux;
+} else {
+	module.exports = require('win-battery-level');
+}
