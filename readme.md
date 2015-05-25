@@ -1,6 +1,13 @@
-# battery-level [![Build Status](https://travis-ci.org/gillstrom/battery-level.svg?branch=master)](https://travis-ci.org/gillstrom/battery-level)
+<h1 align="center">
+	<br>
+	<img width="360" src="https://rawgit.com/gillstrom/battery-level/master/media/logo.png" alt="battery-level">
+	<br>
+	<br>
+</h1>
 
 > Get current battery level
+
+[![Build Status](https://travis-ci.org/gillstrom/battery-level.svg?branch=master)](https://travis-ci.org/gillstrom/battery-level)
 
 
 ## Install
