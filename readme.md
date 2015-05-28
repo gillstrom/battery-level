@@ -44,6 +44,11 @@ $ battery-level --help
 ```
 
 
+## Related
+
+* [browser-battery](https://github.com/gillstrom/browser-battery) - Get battery information in a browser
+
+
 ## License
 
 MIT © [Andreas Gillström](http://github.com/gillstrom)
