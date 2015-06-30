@@ -8,7 +8,7 @@ meow({
 	help: [
 		'Usage',
 		'  $ battery-level'
-	].join('\n')
+	]
 });
 
 batteryLevel(function (err, res) {

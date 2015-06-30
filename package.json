@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "linux-battery": "^1.0.0",
-    "meow": "^3.1.0",
+    "meow": "^3.3.0",
     "osx-battery": "^3.0.1",
     "to-decimal": "^2.0.0",
     "to-percent": "^1.0.2",
