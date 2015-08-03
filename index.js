@@ -21,7 +21,7 @@ function linux(cb) {
 			return;
 		}
 
-		res = res.percentage.slice(0, res.percentage.length);
+		res = res[0].percentage.slice(0, res[0].percentage.length);
 		cb(null, toDecimal(parseFloat(res)));
 	});
 }
