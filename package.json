@@ -5,20 +5,20 @@
   "license": "MIT",
   "repository": "gillstrom/battery-level",
   "author": {
-    "name": "Andreas Gillström",
     "email": "andreasgillstrom@gmail.com",
+    "name": "Andreas Gillström",
     "url": "github.com/gillstrom"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "xo && node test.js"
   },
   "bin": "cli.js",
   "files": [
-    "index.js",
-    "cli.js"
+    "cli.js",
+    "index.js"
   ],
   "keywords": [
     "app",
@@ -28,8 +28,8 @@
     "level",
     "linux",
     "mac",
-    "osx",
     "os x",
+    "osx",
     "windows"
   ],
   "dependencies": {
@@ -41,6 +41,7 @@
     "win-battery-level": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^0.0.4"
+    "ava": "^0.0.4",
+    "xo": "*"
   }
 }
