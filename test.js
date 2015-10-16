@@ -1,14 +1,11 @@
-'use strict';
-var test = require('ava');
-var batteryLevel = require('./');
+import test from 'ava';
+import fn from './';
 
 if (!process.env.CI) {
-	test(function (t) {
-		t.plan(2);
+	test(async t => {
+		const level = await fn();
 
-		batteryLevel().then(function (res) {
-			t.assert(typeof res === 'number', res);
-			t.assert(res > 0 && res <= 1, res);
-		});
+		t.is(typeof level, 'number');
+		t.true(level >= 0 && level <= 1)
 	});
 }
