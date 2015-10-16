@@ -20,5 +20,5 @@ if (process.platform === 'darwin') {
 } else if (process.platform === 'linux') {
 	module.exports = linux;
 } else {
-	module.exports = require('win-battery-level');
+	module.exports = require('./win');
 }
