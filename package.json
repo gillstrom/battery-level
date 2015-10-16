@@ -1,6 +1,6 @@
 {
   "name": "battery-level",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Get current battery level",
   "license": "MIT",
   "repository": "gillstrom/battery-level",
