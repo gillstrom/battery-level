@@ -33,9 +33,9 @@
     "windows"
   ],
   "dependencies": {
-    "linux-battery": "^2.0.0",
+    "linux-battery": "^3.0.1",
     "meow": "^3.3.0",
-    "osx-battery": "^3.0.1",
+    "osx-battery": "^4.0.0",
     "to-decimal": "^2.0.0",
     "to-percent": "^1.0.2",
     "win-battery-level": "^1.0.0"

@@ -4,10 +4,9 @@ var batteryLevel = require('./');
 
 if (!process.env.CI) {
 	test(function (t) {
-		t.plan(3);
+		t.plan(2);
 
-		batteryLevel(function (err, res) {
-			t.assert(!err, err);
+		batteryLevel().then(function (res) {
 			t.assert(typeof res === 'number', res);
 			t.assert(res > 0 && res <= 1, res);
 		});

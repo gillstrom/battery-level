@@ -20,10 +20,10 @@ $ npm install --save battery-level
 ## Usage
 
 ```js
-var batteryLevel = require('battery-level');
+const batteryLevel = require('battery-level');
 
-batteryLevel(function (err, res) {
-	console.log(res);
+batteryLevel().then(level => {
+	console.log(level);
 	//=> 0.55
 });
 ```

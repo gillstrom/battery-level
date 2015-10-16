@@ -11,11 +11,6 @@ meow({
 	]
 });
 
-batteryLevel(function (err, res) {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
+batteryLevel().then(function (res) {
 	console.log(toPercent(res) + '%');
 });
