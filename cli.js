@@ -4,12 +4,10 @@ var meow = require('meow');
 var toPercent = require('to-percent');
 var batteryLevel = require('./');
 
-meow({
-	help: [
-		'Usage',
-		'  $ battery-level'
-	]
-});
+meow([
+	'Usage',
+	'  $ battery-level'
+]);
 
 batteryLevel().then(function (res) {
 	console.log(toPercent(res) + '%');
