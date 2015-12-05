@@ -17,6 +17,7 @@
   },
   "bin": "cli.js",
   "files": [
+    "win.js",
     "cli.js",
     "index.js"
   ],
