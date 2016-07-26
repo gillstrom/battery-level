@@ -45,6 +45,7 @@ $ battery-level --help
 ## Related
 
 * [browser-battery](https://github.com/gillstrom/browser-battery) - Get battery information in a browser
+* [is-charging](https://github.com/gillstrom/is-charging) - Find out if a computer is charging
 
 
 ## License
