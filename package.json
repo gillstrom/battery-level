@@ -10,14 +10,13 @@
     "url": "github.com/gillstrom"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
   },
   "bin": "cli.js",
   "files": [
-    "win.js",
     "cli.js",
     "index.js"
   ],
@@ -34,11 +33,10 @@
     "windows"
   ],
   "dependencies": {
+    "execa": "^0.4.0",
     "linux-battery": "^3.0.1",
     "meow": "^3.3.0",
     "osx-battery": "^4.0.0",
-    "pify": "^2.2.0",
-    "pinkie-promise": "^1.0.0",
     "to-decimal": "^2.0.0",
     "to-percent": "^1.0.2"
   },
@@ -47,8 +45,6 @@
     "xo": "*"
   },
   "xo": {
-    "ignore": [
-      "test.js"
-    ]
+    "esnext": true
   }
 }

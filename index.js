@@ -1,24 +1,25 @@
 'use strict';
-var linuxBattery = require('linux-battery');
-var osxBattery = require('osx-battery');
-var toDecimal = require('to-decimal');
+const execa = require('execa');
+const linuxBattery = require('linux-battery');
+const osxBattery = require('osx-battery');
+const toDecimal = require('to-decimal');
 
-function osx() {
-	return osxBattery().then(function (res) {
-		return parseFloat((res.currentCapacity / res.maxCapacity).toFixed(2));
-	});
-}
+const linux = () => linuxBattery().then(res => toDecimal(parseFloat(res[0].percentage.slice(0, res[0].percentage.length))));
+const osx = () => osxBattery().then(res => parseFloat((res.currentCapacity / res.maxCapacity).toFixed(2)));
 
-function linux() {
-	return linuxBattery().then(function (res) {
-		return toDecimal(parseFloat(res[0].percentage.slice(0, res[0].percentage.length)));
-	});
-}
+const win = () => execa.stdout('WMIC', ['Path', 'Win32_Battery', 'Get', 'EstimatedChargeRemaining']).then(stdout => {
+	if (!stdout) {
+		return Promise.reject(new Error('No battery could be found'));
+	}
+
+	stdout = parseFloat(stdout.trim().split('\n')[1]);
+	return toDecimal(stdout > 100 ? 100 : stdout);
+});
 
 if (process.platform === 'darwin') {
 	module.exports = osx;
 } else if (process.platform === 'linux') {
 	module.exports = linux;
 } else {
-	module.exports = require('./win');
+	module.exports = win;
 }
