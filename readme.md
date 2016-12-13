@@ -1,6 +1,6 @@
 <h1 align="center">
 	<br>
-	<img width="360" src="https://rawgit.com/gillstrom/battery-level/master/media/logo.png" alt="battery-level">
+	<img width="360" src="https://cloud.githubusercontent.com/assets/499192/8873940/10999f96-320c-11e5-86a0-7a447d50b4cb.png" alt="battery-level">
 	<br>
 	<br>
 </h1>
