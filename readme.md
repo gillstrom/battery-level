@@ -11,7 +11,7 @@
 ## Install
 
 ```
-$ npm install --save battery-level
+$ npm install battery-level
 ```
 
 
@@ -50,4 +50,4 @@ $ battery-level --help
 
 ## License
 
-MIT © [Andreas Gillström](http://github.com/gillstrom)
+MIT © [Andreas Gillström](https://github.com/gillstrom)
