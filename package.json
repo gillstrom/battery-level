@@ -33,7 +33,7 @@
 		"windows"
 	],
 	"dependencies": {
-		"execa": "^0.4.0",
+		"execa": "^0.8.0",
 		"linux-battery": "^3.0.1",
 		"meow": "^3.3.0",
 		"osx-battery": "^4.0.0",
