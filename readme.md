@@ -1,6 +1,6 @@
 <h1 align="center">
 	<br>
-	<img width="360" src="https://rawgit.com/gillstrom/battery-level/master/media/logo.png" alt="battery-level">
+	<img width="360" src="media/logo.png" alt="battery-level">
 	<br>
 	<br>
 </h1>
@@ -27,23 +27,9 @@ batteryLevel().then(level => {
 ```
 
 
-## CLI
-
-```
-$ npm install --global battery-level
-```
-
-```
-$ battery-level --help
-
-  Usage
-    $ battery-level
-    55%
-```
-
-
 ## Related
 
+* [battery-level-cli](https://github.com/gillstrom/battery-level-cli) - CLI for this module
 * [browser-battery](https://github.com/gillstrom/browser-battery) - Get battery information in a browser
 * [is-charging](https://github.com/gillstrom/is-charging) - Find out if a computer is charging
 

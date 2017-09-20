@@ -15,9 +15,7 @@
 	"scripts": {
 		"test": "xo && ava"
 	},
-	"bin": "cli.js",
 	"files": [
-		"cli.js",
 		"index.js"
 	],
 	"keywords": [
@@ -35,10 +33,8 @@
 	"dependencies": {
 		"execa": "^0.8.0",
 		"linux-battery": "^3.0.1",
-		"meow": "^3.3.0",
 		"osx-battery": "^4.0.0",
-		"to-decimal": "^2.0.0",
-		"to-percent": "^1.0.2"
+		"to-decimal": "^2.0.0"
 	},
 	"devDependencies": {
 		"ava": "*",
