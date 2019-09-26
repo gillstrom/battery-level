@@ -20,11 +20,18 @@ $ npm install battery-level
 ```js
 const batteryLevel = require('battery-level');
 
-batteryLevel().then(level => {
-	console.log(level);
+(async () => {
+	console.log(await batteryLevel());
 	//=> 0.55
-});
+})();
 ```
+
+
+## API
+
+### batteryLevel()
+
+Returns a `Promise<number>` with the battery level.
 
 
 ## Related
@@ -32,8 +39,3 @@ batteryLevel().then(level => {
 * [battery-level-cli](https://github.com/gillstrom/battery-level-cli) - CLI for this module
 * [browser-battery](https://github.com/gillstrom/browser-battery) - Get battery information in a browser
 * [is-charging](https://github.com/gillstrom/is-charging) - Find out if a computer is charging
-
-
-## License
-
-MIT © [Andreas Gillström](https://github.com/gillstrom)

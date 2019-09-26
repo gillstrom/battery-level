@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from '.';
+import batteryLevel from '.';
 
-test(async t => {
-	const level = await m();
+test('main', async t => {
+	const level = await batteryLevel();
 
 	t.is(typeof level, 'number');
 	t.true(level >= 0 && level <= 1);
